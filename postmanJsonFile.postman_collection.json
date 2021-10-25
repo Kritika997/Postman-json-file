@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "ec9c67c2-708d-4264-a4b3-27b931c4ab6d",
+		"name": "postmanJsonFile",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/userRegister",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXNzd29yZCI6InBvb2phQDEyMyIsImlhdCI6MTYzNTAyMDg5MCwiZXhwIjoxNjM1MDI4MDkwfQ.SXfWN8MfwcBFP5pEIisTW6lj5HWJZG-sbiqZLW8apCQ; Path=/;",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"UserName\":\"kritika\",\n    \"profile_picture\":\"https://i.ibb.co/Jr7Wh1d/challenges.jpg\",\n    \"Email\":\"kritika@gmail.com\",\n    \"Phone_number\":234556788,\n    \"password\":\"kritika@123\",\n    \"Gender\":\"Female\",\n    \"DOb\":\"21/10/1997\",\n    \"Qualification\":\"12th passed\",\n    \"Terms_and_Conditions\":\"Need to fill all requirment\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/userRegister",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"userRegister"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/userLogin",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXNzd29yZCI6ImtyaXRpa2FAMTIzIiwiaWF0IjoxNjM1MTM0NDE1LCJleHAiOjE2MzUxNDE2MTV9.7wCMB0v76HqqTA8AWxpaATuQdpq_WcMJ_-PjpSGrcKk; Path=/;",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"UserName\":\"kritika\",\n    \"Phone_number\":234556788,\n    \"password\":\"kritika@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/userLogin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"userLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/authlogin",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXNzd29yZCI6ImtyaXRpa2FAMTIzIiwiaWF0IjoxNjM1MTM0NDE1LCJleHAiOjE2MzUxNDE2MTV9.7wCMB0v76HqqTA8AWxpaATuQdpq_WcMJ_-PjpSGrcKk; Path=/;",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/authlogin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"authlogin"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
